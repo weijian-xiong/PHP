@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    color:purple;
+}
+
+h1{
+    text-align: center;
+    padding-left: 100px;
+    background-color: lightgray;
+    color: green;
+    font-family: "Allerta Stencil", Sans-serif;
+
+}
+p{
+    color: #66BB6A;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+div[class|=column] {
+    float: left;
+    height: 600px;
+    padding: 15px;
+    border:2px solid;
+}
+
+.column-left {
+    width: 20%;
+}
+
+.column-right {
+    width: 80%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+table {
+    border-collapse:collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+tr:nth-child(even){background-color: white}
+
+th {
+    background-color: #66BB6A;
+    color: white;
+}
+
+@media screen and (max-width:600px) {
+    div[class|=column] {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+input[type=submit] {
+    border-radius: 5px;
+    border: 0;
+    width: 80px;
+    height:25px;
+    font-family: Tahoma;
+    background: #f4f4f4;
+    /* Old browsers */
+/*    background: -moz-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+     FF3.6+ 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #f4f4f4), color-stop(100%, #ededed));
+     Chrome,Safari4+ 
+    background: -webkit-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+     Chrome10+,Safari5.1+ 
+    background: -o-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+     Opera 11.10+ 
+    background: -ms-linear-gradient(top, #f4f4f4 1%, #ededed 100%);
+     IE10+ 
+    background: linear-gradient(to bottom, #f4f4f4 1%, #ededed 100%);*/
+    /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f4f4', endColorstr='#ededed', GradientType=0);
+    /* IE6-9 */
+}
